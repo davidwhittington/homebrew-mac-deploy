@@ -1,10 +1,10 @@
 class MacDeploy < Formula
   desc "macOS workstation security hardening and audit tools"
   homepage "https://davidwhittington.github.io/mac-deploy"
-  url "https://github.com/davidwhittington/mac-deploy/archive/refs/tags/v0.6.0.tar.gz"
-  sha256 "91dff35bfd6e5cf799ed6a242918cd0b183db9d71c650e53886193887005ee03"
+  url "https://github.com/davidwhittington/mac-deploy/archive/refs/tags/v0.7.0.tar.gz"
+  sha256 "5f85470b4d728eae072f1d9b230e3dcbf499eb9d3a3b8fb3dee9a2d99939edc6"
   license "MIT"
-  version "0.6.0"
+  version "0.7.0"
 
   def install
     bin.install "scripts/audit/security-audit.sh"    => "mac-deploy-audit"
@@ -12,6 +12,8 @@ class MacDeploy < Formula
     bin.install "scripts/enable-stealth-firewall.sh" => "mac-deploy-firewall"
     bin.install "scripts/first-run.sh"               => "mac-deploy-first-run"
     bin.install "scripts/apply-configs.sh"           => "mac-deploy-configs"
+    bin.install "scripts/apply-defaults.sh"          => "mac-deploy-defaults"
+    bin.install "scripts/brew-upgrade.sh"            => "mac-deploy-upgrade"
     bin.install "pkgs/capture.sh"                    => "mac-deploy-capture"
     bin.install "pkgs/deploy.sh"                     => "mac-deploy-deploy"
   end
@@ -25,6 +27,8 @@ class MacDeploy < Formula
         mac-deploy-firewall     Enable Application Firewall + stealth mode (requires sudo)
         mac-deploy-first-run    Interactive bootstrap for a new Mac
         mac-deploy-configs      Render and deploy app config templates
+        mac-deploy-defaults     Apply hardened macOS system preferences
+        mac-deploy-upgrade      Upgrade all Homebrew packages and log changes
         mac-deploy-capture      Snapshot current Homebrew and shell config
         mac-deploy-deploy       Restore a saved machine profile
 
