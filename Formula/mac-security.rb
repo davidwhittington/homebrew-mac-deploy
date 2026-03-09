@@ -2,7 +2,7 @@ class MacSecurity < Formula
   desc "macOS workstation security hardening and audit tools"
   homepage "https://davidwhittington.github.io/mac-security"
   url "https://github.com/davidwhittington/mac-security/archive/refs/tags/v0.8.0.tar.gz"
-  sha256 "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
+  sha256 "d9b6cb2652b4124b00644f944f3793a2459dfb0f12309dbf55edbc40fd8598c3"
   license "MIT"
   version "0.8.0"
 
