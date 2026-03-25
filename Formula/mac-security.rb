@@ -1,10 +1,10 @@
 class MacSecurity < Formula
   desc "macOS workstation security hardening and audit tools"
   homepage "https://davidwhittington.github.io/mac-security"
-  url "https://github.com/davidwhittington/mac-security/archive/refs/tags/v0.9.0.tar.gz"
-  sha256 "0bc7c4b60bb101f823dbc4c7a0977636ba2f9c943f6d628f1f84c53a9072153b"
+  url "https://github.com/davidwhittington/mac-security/archive/refs/tags/v0.10.0.tar.gz"
+  sha256 "8b41a6753fbd5185663ccf33220c761a0be70231fa41e403a1ae6cb50b7eeee7"
   license "MIT"
-  version "0.9.0"
+  version "0.10.0"
 
   def install
     bin.install "scripts/audit/security-audit.sh"    => "mac-security-audit"
